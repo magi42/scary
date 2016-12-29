@@ -1,0 +1,31 @@
+= Scary
+Marko Grönroos<magi@iki.fi>
+
+Scary is a lightweight website generator written in Scala.
+
+[NOTE]
+.Much To Be Done
+This is currently just a project stub.
+Minimum Viable Product is still under work.
+
+Templates are (to be) written in Scala using component-based HTML rendering.
+
+== Features (To Be Done)
+
+* Template-based rendering of page content and menus
+* Templates written in Scala
+* Pages written in HTML (converters a possible future expansion)
+* Serves pages dynamically as a Servlet
+* Can generate static sites
+
+== Development
+
+=== Design
+
+See <<design/index#, "Scary Design">>.
+
+=== Requirements
+
+* Maven-based project
+* Requires Scala IDE plug-in for Eclipse
+* Requires `scala-m2e` plug-in

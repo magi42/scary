@@ -1,0 +1,31 @@
+= Scary Design Documentation
+
+To Be Done.
+
+== Page Generation Flow
+
+In server mode (only implemented currently), page generation goes as follows:
+
+. Read page
+. Convert page
+** For HTML, do cleanup
+. Determine template
+. Run template
+. Output page
+
+== Templates
+
+TBD
+
+=== Passthrough Template
+
+The *PassThrough* template simple passes the content through as is.
+This is generally used for pure HTML pages, such as a custom index page.
+
+Not implemented yet.
+
+=== Making a Menu
+
+The *TopLeftMenu* template creates pages where there is a top-level menu on the top bar and secondary menu levels on the left.
+
+Not implemented yet.
