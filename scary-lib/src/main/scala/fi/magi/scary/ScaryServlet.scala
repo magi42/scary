@@ -10,7 +10,7 @@ import javax.servlet.annotation.WebServlet
  *
  * Stub, does not do anything yet.
  */
-@WebServlet(name = "ScaryServlet", urlPatterns = Array("/*"))
+// @WebServlet(name = "ScaryServlet", urlPatterns = Array("/*"))
 class ScaryServlet extends HttpServlet {
   private final val scary_webroot = "scary.webroot"
   

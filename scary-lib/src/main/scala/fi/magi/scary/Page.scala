@@ -15,9 +15,10 @@ class Page(val path: String) {
     // TODO Path with or without terminating slash may refer to a directory
     val cleanpath =
       if (path == null) "/" else path
+    outs.println("cleanpath=" + cleanpath)
 
     // val template = templates.match(url)
-  }
+}
   
   def checkexists(filename: String) : Boolean = {
     false
