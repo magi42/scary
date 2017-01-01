@@ -12,20 +12,47 @@ Templates are (to be) written in Scala using component-based HTML rendering.
 
 == Features (To Be Done)
 
+For Minimum Viable Product:
+
 * Template-based rendering of page content and menus
-* Templates written in Scala
-* Pages written in HTML (converters a possible future expansion)
+** Templates written in Scala
+** One template: HTML pass-through
+* Support for converters
+** One converter: get body content from HTML page
 * Serves pages dynamically as a Servlet
+
+Next early steps:
+
+* Template matching with URL patterns
+* Templates:
+** Left-hand menu
+** Start page with large icons
+* Support for single-page browsing with XHR requests to get page content
 * Can generate static sites
 
 == Development
 
 === Design
 
-See <<design/index#, "Scary Design">>.
+See the <<design/index.adoc#, "Scary Design">>.
 
 === Requirements
 
-* Maven-based project
-* Requires Scala IDE plug-in for Eclipse
-* Requires `scala-m2e` plug-in
+* Requires Maven
+* Eclipse IDE recommended for Scala
+* Requires the Scala IDE plug-in for Eclipse
+** Scala 2.11
+* Requires a web server such as Apache TomEE or Tomcat
+* Requires the `scala-m2e` plug-in
+
+=== Project Setup
+
+[WARNING]
+The instructions below have not been verified and may be incomplete.
+
+. Clone the repository
+. Import the Maven project
+. Edit project properties
+.. In *Deployment Assembly*, add a new assembly with *Java Build Path Entries* containing the Scala dependencies
+. Add a server (Apache Tomcat or TomEE or some other server)
+. Add the project to the server
